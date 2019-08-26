@@ -1,0 +1,61 @@
+header {
+
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    height: 80%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: @color5;
+    height: auto;
+    z-index: 1;
+    // border: 5px solid gold;
+
+
+    .navBar {
+
+        width: 80%;
+        margin: 0 auto;
+
+        nav {
+            display: flex;
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            justify-content: space-around;
+            padding: 0.25%;
+            align-items: center;
+            border: none;
+            // border: 1px solid black;
+
+
+            a {
+                text-decoration: none;
+                color: @color2;
+                border: none;
+                font-size: 2rem;
+                position: -webkit-sticky;
+                /* Required for Safari */
+                position: sticky;
+                height: auto;
+                // border: 1px solid black;
+                font-family: @headings;
+
+                &:hover {
+                    text-decoration: @color3 overline;
+                }
+
+                h1 {
+                    color: @color4  !important;
+                }
+            }
+        }
+
+
+    }
+
+}
