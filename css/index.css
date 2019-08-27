@@ -366,6 +366,9 @@ header .navBar nav a:hover {
 header .navBar nav a h1 {
   color: #a72461 !important;
 }
+* {
+  box-sizing: border-box;
+}
 body {
   width: 100%;
 }
@@ -381,7 +384,7 @@ body img {
 .wrapper section {
   padding: 3%;
   margin: 2% auto;
-  height: 70vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   padding-top: 9%;
@@ -400,20 +403,72 @@ body img {
   width: 50%;
   height: auto;
 }
-.wrapper section .a {
-  display: flex;
-  flex-direction: row-reverse;
-}
-.wrapper section .a p {
-  margin: 0 auto;
-  padding-left: 2%;
-}
 .wrapper section .b {
   display: flex;
 }
 .wrapper section .b p {
   margin: 0 auto;
   padding-right: 2%;
+  text-align: justify;
+}
+.wrapper #features {
+  display: flex;
+  flex-direction: column !important;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-top: 15vh;
+  height: auto;
+}
+.wrapper #features h2 {
+  margin: 0 auto;
+  padding: 1%;
+}
+.wrapper #features .featWrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 2.5rem;
+  padding: 0;
+}
+.wrapper #features .featWrap .featDiv {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  margin: 0.25% auto;
+  padding: 1%;
+  border: 2px dotted #ff935c;
+  border-radius: 12px;
+  background: linear-gradient(rgba(247, 245, 245, 0.5), rgba(241, 237, 237, 0.5));
+  width: 23%;
+  margin-bottom: 30px;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+.wrapper #features .featWrap .featDiv h3 {
+  margin: 0 auto;
+  padding: 0.25%;
+  font-size: 2rem;
+  text-align: center;
+  height: 17vh;
+}
+.wrapper #features .featWrap .featDiv img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1%;
+}
+.wrapper #features .featWrap .featDiv p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.7rem;
+  text-align: inherit;
+  width: 80%;
+  margin: 0 auto;
+}
+.wrapper #features .featWrap .featDiv p i {
+  color: #a72461;
 }
 .bttn {
   display: flex;

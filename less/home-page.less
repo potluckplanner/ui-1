@@ -1,52 +1,7 @@
-// img {
-//     display: flex;
-//     align-self: center;
-//     margin: auto;
-//     width: auto;
-//     height: 75vh;
+* {
+  box-sizing: border-box;
+}
 
-//     .mid {
-//         padding-bottom: 5% 0;
-//     }
-// }
-
-// .image {
-//     opacity: 1;
-//     display: block;
-//     width: 100%;
-//     height: 100%;
-//     transition: .5s ease;
-//     backface-visibility: hidden;
-
-// }
-
-// .middle {
-//     transition: .5s ease;
-//     opacity: 0;
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     -ms-transform: translate(-50%, -50%);
-//     text-align: center;
-
-//     .text {
-//         background-color: @color4;
-//         color: white;
-//         font-size: 16px;
-//         padding: 16px 32px;
-//         margin: auto;
-//     }
-
-// }
-
-// &:hover .image {
-//     opacity: 0.65;
-// }
-
-// &:hover .middle {
-//     opacity: 1;
-// }
 body {
   width: 100%;
 
@@ -64,7 +19,7 @@ body {
   section {
     padding: 3%;
     margin: 2% auto;
-    height: 70vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     padding-top: 9%;
@@ -86,17 +41,7 @@ body {
       }
     }
 
-    .a {
-      display: flex;
-      flex-direction: row-reverse;
 
-      p {
-        margin: 0 auto;
-        padding-left: 2%;
-      }
-
-
-    }
 
     .b {
       display: flex;
@@ -104,7 +49,7 @@ body {
       p {
         margin: 0 auto;
         padding-right: 2%;
-
+        text-align: justify;
       }
     }
 
@@ -112,7 +57,82 @@ body {
 
 
 
+
+
+  #features {
+    display: flex;
+    flex-direction: column !important;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-top: 15vh;
+    height: auto;
+
+    h2 {
+      margin: 0 auto;
+      padding: 1%;
+    }
+
+
+
+    .featWrap {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      width: 100%;
+      font-size: 2.5rem;
+      padding: 0;
+
+
+      .featDiv {
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        margin: .25% auto;
+        padding: 1%;
+        border: 2px dotted @color2;
+        border-radius: 12px;
+        background: linear-gradient(rgba(247, 245, 245, 0.5), rgba(241, 237, 237, 0.5));
+        width: 23%;
+        margin-bottom: 30px;
+        padding: 2rem;
+        margin: 1rem;
+        border-radius: 1rem;
+
+
+        h3 {
+          margin: 0 auto;
+          padding: .25%;
+          font-size: 2rem;
+          text-align: center;
+          height:17vh;
+        }
+
+
+        img {
+          width: 100%;
+          border-radius: 12px;
+          margin-bottom: 1%;
+        }
+
+        p {
+          font-family: @main-font;
+          font-size: 1.7rem;
+          text-align: inherit;
+          width:80%;
+          margin:0 auto;
+          
+          i{
+            color:@color4;
+          }
+        }
+
+      }
+    }
+  }
 }
+
 
 .bttn {
 
