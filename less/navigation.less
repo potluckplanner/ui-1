@@ -13,6 +13,12 @@ header {
     background: @color5;
     height: auto;
     z-index: 1;
+
+    @media @mobile {
+        padding: 3% auto;
+
+    }
+
     // border: 5px solid gold;
 
 
@@ -20,6 +26,7 @@ header {
 
         width: 80%;
         margin: 0 auto;
+
 
         nav {
             display: flex;
@@ -30,7 +37,12 @@ header {
             padding: 0.25%;
             align-items: center;
             border: none;
+
             // border: 1px solid black;
+            @media @mobile {
+                flex-direction: column;
+
+            }
 
 
             a {
@@ -51,7 +63,12 @@ header {
 
                 h1 {
                     color: @color4  !important;
+
+                    @media @mobile {
+                        font-size: 2rem;
+                    }
                 }
+
             }
         }
 

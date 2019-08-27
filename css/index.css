@@ -335,6 +335,11 @@ header {
   height: auto;
   z-index: 1;
 }
+@media (max-width: 500px) {
+  header {
+    padding: 3% auto;
+  }
+}
 header .navBar {
   width: 80%;
   margin: 0 auto;
@@ -348,6 +353,11 @@ header .navBar nav {
   padding: 0.25%;
   align-items: center;
   border: none;
+}
+@media (max-width: 500px) {
+  header .navBar nav {
+    flex-direction: column;
+  }
 }
 header .navBar nav a {
   text-decoration: none;
@@ -366,15 +376,22 @@ header .navBar nav a:hover {
 header .navBar nav a h1 {
   color: #a72461 !important;
 }
+@media (max-width: 500px) {
+  header .navBar nav a h1 {
+    font-size: 2rem;
+  }
+}
 * {
   box-sizing: border-box;
 }
 body {
   width: 100%;
 }
-body img {
+body #headerimg {
   width: 100%;
   height: auto;
+}
+@media (max-width: 500px) {
 }
 .wrapper {
   max-width: 80%;
@@ -389,27 +406,49 @@ body img {
   flex-direction: column;
   padding-top: 9%;
 }
+@media (max-width: 500px) {
+  .wrapper section {
+    padding-top: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper section h1,
+  .wrapper section h2,
+  .wrapper section p {
+    font-size: 2.5rem;
+    padding: 1%;
+    margin: 1% auto;
+    text-align: center;
+  }
+}
 .wrapper section .ab {
   display: flex;
   flex-direction: column;
   align-content: center;
 }
-.wrapper section .a,
 .wrapper section .b {
   margin: auto 0;
+  display: flex;
 }
-.wrapper section .a img,
 .wrapper section .b img {
   width: 50%;
   height: auto;
 }
-.wrapper section .b {
-  display: flex;
+@media (max-width: 500px) {
+  .wrapper section .b img {
+    width: 85%;
+    margin: 0.5% auto;
+  }
 }
 .wrapper section .b p {
   margin: 0 auto;
   padding-right: 2%;
   text-align: justify;
+}
+@media (max-width: 500px) {
+  .wrapper section .b {
+    flex-direction: column-reverse;
+  }
 }
 .wrapper #features {
   display: flex;
@@ -433,6 +472,11 @@ body img {
   font-size: 2.5rem;
   padding: 0;
 }
+@media (max-width: 500px) {
+  .wrapper #features .featWrap {
+    flex-wrap: nowrap;
+  }
+}
 .wrapper #features .featWrap .featDiv {
   display: flex;
   flex-direction: column;
@@ -448,6 +492,12 @@ body img {
   margin: 1rem;
   border-radius: 1rem;
 }
+@media (max-width: 500px) {
+  .wrapper #features .featWrap .featDiv {
+    width: 100%;
+    height: auto;
+  }
+}
 .wrapper #features .featWrap .featDiv h3 {
   margin: 0 auto;
   padding: 0.25%;
@@ -455,10 +505,20 @@ body img {
   text-align: center;
   height: 17vh;
 }
+@media (max-width: 500px) {
+  .wrapper #features .featWrap .featDiv h3 {
+    height: auto;
+  }
+}
 .wrapper #features .featWrap .featDiv img {
   width: 100%;
   border-radius: 12px;
   margin-bottom: 1%;
+}
+@media (max-width: 500px) {
+  .wrapper #features .featWrap .featDiv img {
+    display: none;
+  }
 }
 .wrapper #features .featWrap .featDiv p {
   font-family: 'Roboto', sans-serif;
@@ -485,9 +545,20 @@ body img {
   border-radius: 12px;
   font-family: 'Patua One', cursive;
 }
+@media (max-width: 500px) {
+  .bttn .tbtn {
+    width: 100%;
+    margin: 0.25%;
+  }
+}
 .bttn .tbtn a {
   text-decoration: none;
   color: #a72461;
+}
+@media (max-width: 500px) {
+  .bttn {
+    flex-direction: column;
+  }
 }
 form {
   font-family: 'Patua One', cursive;
@@ -563,6 +634,11 @@ form span.psw {
   flex-wrap: wrap;
   font-size: 2.5rem;
 }
+@media (max-width: 500px) {
+  .aPage .aPageWrap {
+    flex-direction: column;
+  }
+}
 .aPage .aPageWrap div {
   display: flex;
   flex-direction: column;
@@ -573,6 +649,12 @@ form span.psw {
   border: 2px dotted #ff935c;
   border-radius: 12px;
   background: linear-gradient(rgba(247, 245, 245, 0.5), rgba(241, 237, 237, 0.5));
+}
+@media (max-width: 500px) {
+  .aPage .aPageWrap div {
+    width: 100%;
+    margin: 2%;
+  }
 }
 .aPage .aPageWrap div p,
 .aPage .aPageWrap div a,

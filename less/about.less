@@ -18,6 +18,10 @@
 
         font-size: 2.5rem;
 
+        @media @mobile {
+            flex-direction: column;
+        }
+
 
         div {
             display: flex;
@@ -30,6 +34,10 @@
             border-radius: 12px;
             background: linear-gradient(rgba(247, 245, 245, 0.5), rgba(241, 237, 237, 0.5));
 
+            @media @mobile {
+                width: 100%;
+                margin:2%;
+            }
 
             p,
             a,
