@@ -48,161 +48,162 @@
 //     opacity: 1;
 // }
 body {
+  width: 100%;
+
+  img {
     width: 100%;
+    height: auto;
+  }
+}
 
-    img {
-        width: 100%;
+.wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+  font-size: 2.5rem;
+
+  section {
+    padding: 3%;
+    margin: 2% auto;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 9%;
+
+    .ab {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+
+    }
+
+    .a,
+    .b {
+      margin: auto 0;
+
+      img {
+        width: 50%;
         height: auto;
+      }
     }
 
-    .wrapper {
-        max-width: 80%;
+    .a {
+      display: flex;
+      flex-direction: row-reverse;
+
+      p {
         margin: 0 auto;
-        font-size: 2.5rem;
-
-        section {
-            padding: 3%;
-            margin: 2% auto;
-            height: 70vh;
-            display: flex;
-            flex-direction: column;
-            padding-top: 9%;
-
-            .ab {
-                display: flex;
-                flex-direction: column;
-                align-content: center;
-
-            }
-
-            .a,
-            .b {
-                margin: auto 0;
-
-                img {
-                    width: 45%;
-                    height: auto;
-                }
-            }
-
-            .a {
-                display: flex;
-                flex-direction: row-reverse;
-
-                p {
-                    margin: 0 auto;
-                    padding-left: 2%;
-                }
-
-                video {
-                    width: 50%;
-                }
-            }
-
-            .b {
-                display: flex;
-
-                p {
-                    margin: 0 auto;
-                    padding-right: 2%;
-
-                }
-            }
-
-        }
-
+        padding-left: 2%;
+      }
 
 
     }
 
-    .bttn {
+    .b {
+      display: flex;
 
-        display: flex;
-        width: 80%;
+      p {
         margin: 0 auto;
-        padding: 1.5%;
-        justify-content: space-between;
+        padding-right: 2%;
 
-        .tbtn {
-            width: 25%;
-            height: auto;
-            background: @color5;
-            color: @color4;
-            border-radius: 12px;
-            font-family: @headings;
-
-            a {
-                text-decoration: none;
-                color:@color4;
-            }
-        }
-
-
+      }
     }
 
-    form {
-        // border: 3px solid #f1f1f1;
-      font-family: @headings;
-      
-      /* Full-width inputs */
-      input[type=text], input[type=password] {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        // border: 1px solid rgb(252, 252, 252);
-        box-sizing: border-box;
-      }
-      
-      /* Set a style for all buttons */
-      button {
-        background-color: @color4;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        cursor: pointer;
-        width: 100%;
-      }
-      
-      /* Add a hover effect for buttons */
-      button:hover {
-        opacity: 0.8;
-      }
-      
-      /* Extra style for the cancel button (red) */
-      .cancelbtn {
-        width: auto;
-        padding: 10px 18px;
-        background-color:@color3;
-      }
-      
-      /* Center the avatar image inside this container */
-      .imgcontainer {
-        text-align: center;
-        margin: 24px 0 12px 0;
-      }
-      
-      
-      /* Add padding to containers */
-      .container {
-        padding: 16px;
-      }
-      
-      /* The "Forgot password" text */
-      span.psw {
-        float: right;
-        padding-top: 16px;
-      }
-      
-      /* Change styles for span and cancel button on extra small screens */
-      @media screen and (max-width: 300px) {
-        span.psw {
-          display: block;
-          float: none;
-        }
-        .cancelbtn {
-          width: 100%;
-        }
-      }
-}}
+  }
+
+
+
+}
+
+.bttn {
+
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.5%;
+  justify-content: space-between;
+
+  .tbtn {
+    width: 25%;
+    height: auto;
+    background: @color5;
+    color: @color4;
+    border-radius: 12px;
+    font-family: @headings;
+
+    a {
+      text-decoration: none;
+      color: @color4;
+    }
+  }
+
+
+}
+
+form {
+  // border: 3px solid #f1f1f1;
+  font-family: @headings;
+
+  /* Full-width inputs */
+  input[type=text],
+  input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    // border: 1px solid rgb(252, 252, 252);
+    box-sizing: border-box;
+  }
+
+  /* Set a style for all buttons */
+  button {
+    background-color: @color4;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: @color3;
+  }
+
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+
+
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+  }
+
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+}
