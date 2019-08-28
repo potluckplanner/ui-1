@@ -309,6 +309,11 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+@media (max-width: 500px) {
+  html body {
+    box-sizing: border-box;
+  }
+}
 h1,
 h2,
 h3,
@@ -320,6 +325,11 @@ h6 {
 }
 h1 {
   font-size: 4rem;
+}
+@media (max-width: 500px) {
+  * {
+    box-sizing: border-box;
+  }
 }
 header {
   margin: 0 auto;
@@ -376,27 +386,42 @@ header .navBar nav a:hover {
 header .navBar nav a h1 {
   color: #a72461 !important;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   header .navBar nav a h1 {
     font-size: 2rem;
   }
 }
 * {
   box-sizing: border-box;
+  line-height: 1.5;
 }
 body {
   width: 100%;
+}
+@media (max-width: 500px), (max-width: 800px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
 }
 body #headerimg {
   width: 100%;
   height: auto;
 }
-@media (max-width: 500px) {
+body i {
+  color: #a72461;
 }
 .wrapper {
   max-width: 80%;
   margin: 0 auto;
   font-size: 2.5rem;
+}
+@media (max-width: 500px), (max-width: 800px) {
+  .wrapper {
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+  }
 }
 .wrapper section {
   padding: 3%;
@@ -409,16 +434,42 @@ body #headerimg {
 @media (max-width: 500px) {
   .wrapper section {
     padding-top: 40%;
+    justify-content: space-evenly;
+    margin: 8% auto;
+    height: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .wrapper section {
+    justify-content: space-evenly;
+    margin: 8% auto;
+    height: 100%;
+  }
+}
+@media (max-width: 500px), (max-width: 800px) {
+  .wrapper section h1,
+  .wrapper section h2,
+  .wrapper section p {
+    padding: 1%;
+    margin: 1% auto;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper section h2 {
+    font-size: 2.3rem;
   }
 }
 @media (max-width: 500px) {
   .wrapper section h1,
-  .wrapper section h2,
   .wrapper section p {
-    font-size: 2.5rem;
-    padding: 1%;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 800px) {
+  .wrapper section h1 {
+    font-size: 3.3rem;
     margin: 1% auto;
-    text-align: center;
   }
 }
 .wrapper section .ab {
@@ -434,10 +485,10 @@ body #headerimg {
   width: 50%;
   height: auto;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .wrapper section .b img {
     width: 85%;
-    margin: 0.5% auto;
+    margin: 4% auto;
   }
 }
 .wrapper section .b p {
@@ -445,7 +496,7 @@ body #headerimg {
   padding-right: 2%;
   text-align: justify;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .wrapper section .b {
     flex-direction: column-reverse;
   }
@@ -472,7 +523,7 @@ body #headerimg {
   font-size: 2.5rem;
   padding: 0;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .wrapper #features .featWrap {
     flex-wrap: nowrap;
   }
@@ -492,7 +543,7 @@ body #headerimg {
   margin: 1rem;
   border-radius: 1rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .wrapper #features .featWrap .featDiv {
     width: 100%;
     height: auto;
@@ -500,13 +551,19 @@ body #headerimg {
 }
 .wrapper #features .featWrap .featDiv h3 {
   margin: 0 auto;
-  padding: 0.25%;
+  padding: 0.5%;
   font-size: 2rem;
   text-align: center;
-  height: 17vh;
+  height: 10vh;
 }
 @media (max-width: 500px) {
   .wrapper #features .featWrap .featDiv h3 {
+    height: auto;
+  }
+}
+@media (max-width: 800px) {
+  .wrapper #features .featWrap .featDiv h3 {
+    font-size: 3rem;
     height: auto;
   }
 }
@@ -523,9 +580,14 @@ body #headerimg {
 .wrapper #features .featWrap .featDiv p {
   font-family: 'Roboto', sans-serif;
   font-size: 1.7rem;
-  text-align: inherit;
-  width: 80%;
+  text-align: center;
+  width: 90%;
   margin: 0 auto;
+}
+@media (max-width: 800px) {
+  .wrapper #features .featWrap .featDiv p {
+    font-size: 2.5rem;
+  }
 }
 .wrapper #features .featWrap .featDiv p i {
   color: #a72461;
@@ -545,7 +607,7 @@ body #headerimg {
   border-radius: 12px;
   font-family: 'Patua One', cursive;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .bttn .tbtn {
     width: 100%;
     margin: 0.25%;
@@ -634,7 +696,7 @@ form span.psw {
   flex-wrap: wrap;
   font-size: 2.5rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .aPage .aPageWrap {
     flex-direction: column;
   }
@@ -650,7 +712,7 @@ form span.psw {
   border-radius: 12px;
   background: linear-gradient(rgba(247, 245, 245, 0.5), rgba(241, 237, 237, 0.5));
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .aPage .aPageWrap div {
     width: 100%;
     margin: 2%;
@@ -665,7 +727,6 @@ form span.psw {
 .aPage .aPageWrap div p {
   font-size: 1.7rem;
   text-align: justify;
-  line-height: 1.5;
 }
 .aPage .aPageWrap div img {
   width: 100%;

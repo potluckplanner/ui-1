@@ -5,6 +5,14 @@ html{
   font-family: @main-font;
   font-size: 62.5%;
   scroll-behavior: smooth;
+
+
+  body{
+    @media @mobile{
+      box-sizing: border-box;
+
+    }
+  }
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -14,4 +22,10 @@ h1,h2,h3,h4,h5,h6{
 
 h1{
     font-size: 4rem;
+}
+
+*{
+  @media @mobile{
+    box-sizing: border-box;
+  }
 }

@@ -1,17 +1,25 @@
 * {
   box-sizing: border-box;
+  line-height: 1.5;
+
 }
 
 body {
   width: 100%;
 
+  @media @mobile,
+  @tablet {
+    display: flex;
+    flex-direction: column;
+  }
+
   #headerimg {
     width: 100%;
     height: auto;
+  }
 
-    @media @mobile {
-      // display: none;
-    }
+  i {
+    color: @color4;
   }
 }
 
@@ -19,6 +27,13 @@ body {
   max-width: 80%;
   margin: 0 auto;
   font-size: 2.5rem;
+
+  @media @mobile,
+  @tablet {
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+  }
 
   section {
     padding: 3%;
@@ -30,16 +45,48 @@ body {
 
     @media @mobile {
       padding-top: 40%;
+      justify-content: space-evenly;
+      margin: 8% auto;
+      height: 100%;
+    }
+
+    @media @tablet {
+      justify-content: space-evenly;
+      margin: 8% auto;
+      height: 100%;
     }
 
     h1,
     h2,
     p {
-      @media @mobile {
-        font-size: 2.5rem;
+
+      @media @mobile,
+      @tablet {
         padding: 1%;
         margin: 1% auto;
         text-align: center;
+        // font-size: 2.5rem;
+      }
+    }
+
+    h2 {
+      @media @mobile {
+        font-size: 2.3rem;
+      }
+    }
+
+    h1,
+    p {
+      @media @mobile {
+        font-size: 2rem;
+
+      }
+    }
+
+    h1 {
+      @media @tablet {
+        font-size: 3.3rem;
+        margin: 1% auto;
       }
     }
 
@@ -59,9 +106,10 @@ body {
         width: 50%;
         height: auto;
 
-        @media @mobile {
+        @media @mobile,
+        @tablet {
           width: 85%;
-          margin: .50% auto;
+          margin: 4% auto;
         }
       }
 
@@ -71,7 +119,8 @@ body {
         text-align: justify;
       }
 
-      @media @mobile {
+      @media @mobile,
+      @tablet {
         flex-direction: column-reverse;
       }
     }
@@ -110,7 +159,8 @@ body {
       font-size: 2.5rem;
       padding: 0;
 
-      @media @mobile {
+      @media @mobile,
+      @tablet {
         flex-wrap: nowrap;
       }
 
@@ -129,20 +179,26 @@ body {
         margin: 1rem;
         border-radius: 1rem;
 
-        @media @mobile{
-          width:100%;
-          height:auto;
+        @media @mobile,
+        @tablet {
+          width: 100%;
+          height: auto;
         }
 
 
         h3 {
           margin: 0 auto;
-          padding: .25%;
+          padding: .5%;
           font-size: 2rem;
           text-align: center;
-          height: 17vh;
+          height: 10vh;
 
-          @media @mobile{
+          @media @mobile {
+            height: auto;
+          }
+
+          @media@tablet{
+            font-size:3rem;
             height: auto;
           }
         }
@@ -152,7 +208,8 @@ body {
           width: 100%;
           border-radius: 12px;
           margin-bottom: 1%;
-          @media @mobile{
+
+          @media @mobile {
             display: none;
           }
         }
@@ -160,9 +217,13 @@ body {
         p {
           font-family: @main-font;
           font-size: 1.7rem;
-          text-align: inherit;
-          width: 80%;
+          text-align: center;
+          width: 90%;
           margin: 0 auto;
+
+          @media@tablet {
+            font-size: 2.5rem;
+          }
 
           i {
             color: @color4;
@@ -193,10 +254,13 @@ body {
     border-radius: 12px;
     font-family: @headings;
 
-    @media @mobile {
+    @media @mobile,
+    @tablet {
       width: 100%;
       margin: .25%;
     }
+
+
 
     a {
       text-decoration: none;
