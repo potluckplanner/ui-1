@@ -501,6 +501,11 @@ body i {
   font-size: 1.7rem;
   text-align: justify;
 }
+@media (min-width:1500px) {
+  #get-started .startWrap .startDiv p {
+    font-size: 2rem;
+  }
+}
 #get-started .startWrap .startDiv img {
   width: 100%;
   border-radius: 12px;
