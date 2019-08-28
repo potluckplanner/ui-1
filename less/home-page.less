@@ -1,0 +1,356 @@
+* {
+  box-sizing: border-box;
+  line-height: 1.5;
+
+}
+
+body {
+  width: 100%;
+
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #headerimg {
+    width: 100%;
+    height: auto;
+
+    @media @mobile {
+      // display: none;
+    }
+  }
+
+  i {
+    color: @color4;
+  }
+}
+
+.wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+  font-size: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: auto;
+  // border: 2px solid purple;
+
+
+
+  h2 {
+    margin: 0 auto;
+    padding: 1%;
+  }
+
+  .aboutWrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+    width: 100%;
+    // border: 2px solid red;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+    @media @mobile {
+      flex-direction: column;
+    }
+  }
+
+  .aboutDiv {
+    width: 45%;
+@media @mobile{
+  width:100%;
+}
+    h1 {
+      text-align: justify;
+      color: @color2;
+    }
+
+    p {
+      width: 100%;
+      font-size: 1.7rem;
+      text-align: justify;
+    }
+  }
+
+
+}
+
+#get-started {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: auto;
+  // border: 2px solid purple;
+
+  h2 {
+    margin: 0 auto;
+    padding: 1%;
+  }
+
+  .startWrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 100%;
+    // border: 2px solid red;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+    @media @mobile,
+    @tablet {
+      flex-direction: column-reverse;
+    }
+
+
+
+    .startDiv {
+      width: 45%;
+
+      @media @mobile,
+      @tablet {
+        width: 100%;
+      }
+
+      p {
+        width: 100%;
+        font-size: 1.7rem;
+        text-align: justify;
+
+        @media @desktop{
+          font-size:2rem;
+        }
+      }
+
+      img {
+        width: 100%;
+        border-radius: 12px;
+      }
+    }
+  }
+}
+
+#features {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: auto;
+  // border: 2px solid purple;
+
+  h2 {
+    margin: 0 auto;
+    padding: 1%;
+  }
+
+
+
+  .featWrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 2.5rem;
+    padding: 0;
+    // border: 2px solid red;
+    align-items: flex-start;
+
+
+
+
+    @media @mobile,
+    @tablet {
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+
+    .featDiv {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch; // margin: .25% auto;
+      padding: 1%;
+      border: 2px dotted @color2;
+      border-radius: 12px;
+      background: linear-gradient(rgba(247, 245, 245, 0.5), rgba(241, 237, 237, 0.5));
+      width: 23%;
+      // margin-bottom :30px;
+      margin: .25% auto;
+      border-radius: 12px;
+
+      @media @mobile,
+      @tablet {
+        width: 100%;
+        height: auto;
+      }
+
+
+      h3 {
+        margin: 2% auto;
+        padding: .5%;
+        font-size: 2rem;
+        text-align: center;
+        // height: 10vh;
+
+        @media @mobile {
+          height: auto;
+        }
+      }
+
+
+      img {
+        width: 100%;
+        border-radius: 12px;
+        margin-bottom: 1%;
+
+        @media @mobile {
+          display: none;
+        }
+      }
+
+      p {
+        font-family: @main-font;
+        font-size: 1.7rem;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+
+        i {
+          color: @color4;
+        }
+      }
+
+    }
+  }
+}
+
+
+section{
+padding-top: 12%;
+@media @mobile{
+  padding-top: 44%;
+}
+}
+
+
+.bttn {
+
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.5%;
+  justify-content: space-between;
+
+  .tbtn {
+    width: 25%;
+    height: auto;
+    background: @color5;
+    color: @color4;
+    border-radius: 12px;
+    font-family: @headings;
+
+    @media @mobile {
+      width: 100%;
+      margin: .25%;
+    }
+
+    a {
+      text-decoration: none;
+      color: @color4;
+    }
+  }
+
+  @media @mobile {
+    flex-direction: column;
+  }
+
+}
+
+form {
+  // border: 3px solid #f1f1f1;
+  font-family: @headings;
+
+  /* Full-width inputs */
+  input[type=text],
+  input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    // border: 1px solid rgb(252, 252, 252);
+    box-sizing: border-box;
+  }
+
+  /* Set a style for all buttons */
+  button {
+    background-color: @color4;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: @color3;
+  }
+
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+
+
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+  }
+
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+}
