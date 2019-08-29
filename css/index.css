@@ -1,3 +1,16 @@
+.sections {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: auto;
+}
+.sections h2 {
+  margin: 0 auto;
+  padding: 1%;
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -404,6 +417,9 @@ body #headerimg {
   height: auto;
 }
 @media (max-width: 500px) {
+  body #headerimg {
+    padding-top: 44%;
+  }
 }
 body i {
   color: #a72461;
@@ -490,6 +506,7 @@ body i {
 }
 #get-started .startWrap .startDiv {
   width: 45%;
+  height: 100%;
 }
 @media (max-width: 500px), (max-width: 900px) {
   #get-started .startWrap .startDiv {
